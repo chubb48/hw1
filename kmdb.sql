@@ -25,6 +25,59 @@
 -- * Note: The "guest" user role represents the experience prior to logging-in
 --   to an app and typically does not have a corresponding database table.
 
+CREATE TABLE movies (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT, 
+    year INTEGER, 
+    mpaa rating INTEGER,
+    studio TEXT);
+
+    CREATE TABLE library (
+         id INTEGER PRIMARY KEY AUTOINCREMENT,
+         movies_id INTEGER);
+    )
+
+CREATE TABLE studio (
+   id INTEGER PRIMARY KEY AUTOINCREMENT,
+   movies_id INTEGER);
+
+   CREATE TABLE cast (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    actor TEXT,
+    character TEXT);
+
+INSERT INTO movies (
+    title,
+    year,
+    mpaa,
+    studio)
+    VALUES (
+        "Batman Begins", 2006, 3, "Warner Bros");
+
+    INSERT INTO movies (
+    title,
+    year,
+    mpaa,
+    studio)
+    VALUES (
+        "The Dark KNight", 2008, 3, "Warner Bros");
+       
+        INSERT INTO movies (
+    title,
+    year,
+    mpaa,
+    studio)
+    VALUES (
+        "The Dark KNight Rises", 2012, 5, "Warner Bros");
+
+        INSERT INTO cast (actor TEXT, character TEXT)
+        VALUES ("Christian Bale", "Batman");
+
+    )
+)
+
+  
+
 
 -- Deliverables
 -- 
